@@ -1,0 +1,10 @@
+C:\LevviaLauncher\LevviaLauncher\bin\Debug\LevviaLauncher.exe.config
+C:\LevviaLauncher\LevviaLauncher\bin\Debug\LevviaLauncher.exe
+C:\LevviaLauncher\LevviaLauncher\bin\Debug\LevviaLauncher.pdb
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.csproj.AssemblyReference.cache
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.Form1.resources
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.Properties.Resources.resources
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.csproj.GenerateResource.cache
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.csproj.CoreCompileInputs.cache
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.exe
+C:\LevviaLauncher\LevviaLauncher\obj\Debug\LevviaLauncher.pdb
