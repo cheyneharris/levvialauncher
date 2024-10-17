@@ -31,7 +31,7 @@ namespace LevviaLauncher
             environmentBox.SelectedIndex = 0;
             launchButton.Click += LaunchButton_Click;
 
-            this.FormBorderStyle = FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle = FormBorderStyle.Fixed3D;
             this.StartPosition = FormStartPosition.Manual;
            this.Location = new System.Drawing.Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width), 0);
         }
@@ -59,55 +59,25 @@ namespace LevviaLauncher
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
@@ -347,7 +317,17 @@ namespace LevviaLauncher
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void launchButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
