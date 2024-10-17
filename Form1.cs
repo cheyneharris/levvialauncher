@@ -331,5 +331,17 @@ namespace LevviaLauncher
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = @"azurite.exe command  azurite --blobPort 10005 --queuePort 10006 --tablePort 10007 --skipApiVersionCheck";
+            process.StartInfo.UseShellExecute = true;
+            process.StartInfo.RedirectStandardOutput = false;
+            process.StartInfo.RedirectStandardError = false;
+            process.StartInfo.CreateNoWindow = false;
+
+            process.Start();
+        }
     }
 }   
