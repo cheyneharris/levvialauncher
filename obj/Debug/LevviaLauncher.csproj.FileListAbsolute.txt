@@ -18,3 +18,5 @@ C:\LevviaLauncher\obj\Debug\LevviaLauncher.pdb
 C:\LevviaLauncher\bin\Debug\LevviaLauncher.exe.config
 C:\LevviaLauncher\bin\Debug\LevviaLauncher.exe
 C:\LevviaLauncher\bin\Debug\LevviaLauncher.pdb
+C:\LevviaLauncher\bin\Debug\Resources\Levvia_v2_4_User_Guide.pdf
+C:\LevviaLauncher\bin\Debug\Resources\Levvia v3.0 User Guide.pdf

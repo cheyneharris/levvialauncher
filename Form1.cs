@@ -334,14 +334,71 @@ namespace LevviaLauncher
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Process process = new Process();
-            process.StartInfo.FileName = @"azurite.exe command  azurite --blobPort 10005 --queuePort 10006 --tablePort 10007 --skipApiVersionCheck";
-            process.StartInfo.UseShellExecute = true;
-            process.StartInfo.RedirectStandardOutput = false;
-            process.StartInfo.RedirectStandardError = false;
-            process.StartInfo.CreateNoWindow = false;
 
+            var azuriteCommand = "azurite --blobPort 10005 --queuePort 10006 --tablePort 10007 --skipApiVersionCheck";
+
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/c " + azuriteCommand;
+            startInfo.UseShellExecute = false;
+            startInfo.RedirectStandardOutput = true;
+            startInfo.RedirectStandardError = true;
+
+            try
+            {
+                Process process = new Process();
+                process.StartInfo = startInfo;
+
+                if (process.Start())
+                {
+
+                }
+                else
+                {
+
+                    MessageBox.Show("Failed to start Azurite. Please check the path and permissions.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string memreductPath = "C:\\Program Files\\Mem Reduct\\memreduct.exe";
+
+            Process process = new Process();
+            process.StartInfo.FileName = memreductPath;
+            process.StartInfo.UseShellExecute = false; 
             process.Start();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string pdfPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Levvia_v2_4_User_Guide.pdf");
+            Process.Start(new ProcessStartInfo(pdfPath)
+            {
+                UseShellExecute = true
+            });
+        }
+
+ 
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string pdfPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Levvia v3.0 User Guide.pdf");
+            Process.Start(new ProcessStartInfo(pdfPath)
+            {
+                UseShellExecute = true
+            });
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }   
