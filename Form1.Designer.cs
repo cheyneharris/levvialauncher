@@ -52,10 +52,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.dashboardButton = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.ema2Button = new System.Windows.Forms.Button();
@@ -75,6 +71,13 @@
             this.button5 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -86,11 +89,13 @@
             this.tabControl2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,10 +105,11 @@
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage8);
+            this.tabControl.Controls.Add(this.tabPage9);
             this.tabControl.Location = new System.Drawing.Point(4, 3);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1134, 135);
+            this.tabControl.Size = new System.Drawing.Size(972, 135);
             this.tabControl.TabIndex = 18;
             // 
             // tabPage1
@@ -111,13 +117,12 @@
             this.tabPage1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tabPage1.Controls.Add(this.panel8);
             this.tabPage1.Controls.Add(this.panel7);
-            this.tabPage1.Controls.Add(this.panel6);
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1126, 106);
+            this.tabPage1.Size = new System.Drawing.Size(964, 106);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bugs";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -332,48 +337,6 @@
             this.dashboardButton.UseVisualStyleBackColor = true;
             this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.button7);
-            this.panel6.Controls.Add(this.button10);
-            this.panel6.Location = new System.Drawing.Point(970, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 96);
-            this.panel6.TabIndex = 20;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 15);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "User Guides";
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(6, 23);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(135, 34);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Levvia v2.4";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(6, 60);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(135, 33);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "Levvia v3.x";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label5);
@@ -448,7 +411,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(770, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(194, 100);
+            this.panel3.Size = new System.Drawing.Size(192, 100);
             this.panel3.TabIndex = 17;
             // 
             // environmentBox
@@ -483,14 +446,14 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage2.Controls.Add(this.flowLayoutPanel1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1126, 106);
+            this.tabPage2.Size = new System.Drawing.Size(964, 106);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Launch";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
             // 
@@ -505,7 +468,7 @@
             this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 6);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1114, 94);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(956, 94);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // button1
@@ -561,22 +524,91 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1126, 106);
+            this.tabPage3.Size = new System.Drawing.Size(964, 106);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Queries";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage8
             // 
+            this.tabPage8.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1126, 106);
+            this.tabPage8.Size = new System.Drawing.Size(964, 106);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Reports";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabPage9.Controls.Add(this.panel6);
+            this.tabPage9.Controls.Add(this.panel9);
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(964, 106);
+            this.tabPage9.TabIndex = 4;
+            this.tabPage9.Text = "Documentation";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button7);
+            this.panel6.Location = new System.Drawing.Point(160, 7);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(805, 96);
+            this.panel6.TabIndex = 22;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(12, 13);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(94, 75);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "Wiki";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label8);
+            this.panel9.Controls.Add(this.button8);
+            this.panel9.Controls.Add(this.button9);
+            this.panel9.Location = new System.Drawing.Point(4, 7);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(150, 96);
+            this.panel9.TabIndex = 21;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 2);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 15);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "User Guides";
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(6, 23);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(135, 34);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "Levvia v2.4";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(6, 60);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(135, 33);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "Levvia v3.x";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // tabControl3
             // 
@@ -613,7 +645,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1141, 142);
+            this.ClientSize = new System.Drawing.Size(981, 139);
             this.Controls.Add(this.tabControl3);
             this.Controls.Add(this.tabControl);
             this.MaximizeBox = false;
@@ -632,14 +664,16 @@
             this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.tabControl3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -687,14 +721,17 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
